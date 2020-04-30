@@ -4,9 +4,7 @@
 <head>
 	<title>Home Page</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="">
-	<meta name="keywords" content="LERAMIZ, unica, creative, html">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<!-- Favicon -->   
 	<link href="{% static 'img/favicon.ico' %}" rel="shortcut icon"/>
 
@@ -84,21 +82,26 @@
 		  <div class="modal-body">
 			  <div class="box">
 				   <div class="content">
-					  <div class="social">
+					     <div class="social">
 						  <a class="circle github" href="#">
 							  <i class="fa fa-github fa-fw"></i>
-						  </a>
+						  </a> 
+						 
 						  <a id="google_login" class="circle google" href="#">
 							  <i class="fa fa-google-plus fa-fw"></i>
 						  </a>
+						  
+						  
 						  <a id="facebook_login" class="circle facebook" href="#">
 							  <i class="fa fa-facebook fa-fw"></i>
-						  </a>
-					  </div>
+						 
+						  </a> 
+					
+					 </div>
 					  <div class="division">
 						  <div class="line l"></div>
 							<span>or</span>
-						  <div class="line r"></div>
+						  <div class="line r"></div> 
 					  </div>
 					  <div class="error"></div>
 					  <div class="form loginBox">
@@ -169,25 +172,32 @@
 						<p><i class="fa fa-phone"></i>(+88) 3392031109</p>
 						<p><i class="fa fa-envelope"></i>info.marcfiorerealestate@gmail.com</p>
 						<p><i class="fa fa-clock-o"></i>Mon - Sat, 08 AM - 06 PM</p>
+						<div class="social" style="padding-top: 0px !important;">
+                            <ul class="d-md-inline-flex">
+                                <li><a href="https://www.instagram.com/marcfiorebos/?hl=en"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/marcfiorerealestate"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCPdH07UcHWYAQBTlhBo9k-A"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/marc-fiore-a4361723/"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 footer-widget">
 					<div class="double-menu-widget">
 						<h5 class="fw-title">POPULAR PLACES</h5>
 						<ul>
-							<li><a href="">Florida</a></li>
-							<li><a href="">New York</a></li>
-							<li><a href="">Washington</a></li>
-							<li><a href="">Los Angeles</a></li>
-							<li><a href="">Chicago</a></li>
+							<li>
+                                <a href="">Boston</a>
+                            </li>
+                            <li><a href="">Medford</a></li>
+
+                        </ul>
+                        <ul>
+                            <li><a href="">Suffolk</a></li>
+                            <li><a href="">Essex</a></li>
+
 						</ul>
-						<ul>
-							<li><a href="">St Louis</a></li>
-							<li><a href="">Jacksonville</a></li>
-							<li><a href="">San Jose</a></li>
-							<li><a href="">San Diego</a></li>
-							<li><a href="">Houston</a></li>
-						</ul>
+						
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6  footer-widget">
@@ -205,12 +215,17 @@
 			<div class="footer-bottom">
 				<div class="footer-nav">
 					<ul>
-						<li><a href="">Home</a></li>
-						<li><a href="">Featured Listing</a></li>
-						<li><a href="">About us</a></li>
-						<li><a href="">Pages</a></li>
-						<li><a href="">Blog</a></li>
-						<li><a href="">Contact</a></li>
+						<li><a href="index.html">Home</a></li>
+                            <li><a href="categories.html">Advance Search</a></li>
+                            <li><a href="categories.html">Market Reports</a></li>
+                            <li><a href="categories.html">Foreclosures</a></li>
+							<li><a href="about.html">ABOUT</a></li>
+							<li><a href="single-list.html">Blog</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">
+								Login
+
+							</a></li>
 					</ul>
 				</div>
 				<div class="copyright">
@@ -225,11 +240,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<!-- Footer section end -->
   
 	
-	
-	
-	
-	
-	
+		
 	{% block js %}
 	<!--====== Javascripts & Jquery ======-->
 
@@ -245,7 +256,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script type="text/javascript">
 
 		$(document).ready(function(){
-				openLoginModal();
+				// openLoginModal();
 			});
 		
 		

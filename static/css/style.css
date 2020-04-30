@@ -108,8 +108,16 @@ ol {
 }
 
 .spad {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.blog-meta2
+{
+display: flex;
+flex-wrap: wrap;
+align-content: center;
+
 }
 
 .text-white h1,
@@ -284,7 +292,8 @@ ol {
 }
 
 .main-menu {
-	float: right;    padding: 20px 0;
+	float: right;    
+	padding: 20px 0;
 	list-style: none;
 }
 
@@ -2110,4 +2119,27 @@ ol {
     padding: 10px;
    
 }
+}
+
+/*custom css   */
+
+.feature-title2
+{
+	padding-top: 0px;
+}
+
+.spad-text
+{
+padding-top: 0px;
+padding-bottom: 0px;
+
+}
+
+.spad-text p{
+	font-size: 16px;
+	text-align: justify;
+}
+
+p{
+	font-size: 16px;
 }
