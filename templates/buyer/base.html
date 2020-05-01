@@ -44,13 +44,13 @@
 				<div class="col-12">
 					<div class="site-navbar" style="display:flexbox">
                         
-					 	<a href="#" class="site-logo"><img  src="{% static 'img/logo-resize.png' %}" class="img-responsive"  alt=""></a>
+					 	<a href="#" class="site-logo"><img  src="{% static 'img/new_logo.png' %}" class="img-responsive"  alt=""></a>
 						<div class="nav-switch">
 							<i class="fa fa-bars"></i>
 						</div>
 						<ul class="main-menu">
 							<li><a href="index.html">Home</a></li>
-                            <li><a href="categories.html">Advance Search</a></li>
+                            <li><a href="advance_search">Advance Search</a></li>
                             <li><a href="categories.html">Market Reports</a></li>
                             <li><a href="categories.html">Foreclosures</a></li>
 							<li><a href="about.html">ABOUT</a></li>
@@ -144,14 +144,31 @@
    <!-- end Login popup-->
 
 
-
+<div class="col-12">
    {% block pagecontent %}
 	
    {% endblock %}
+</div>
 
-    <!-- Footer section -->
-    {% block footer %}
+
+	<!-- Footer section -->
+	
+	{% block footer %}
+	
+
+    <div class="container">
+			<div class="footer-logo">
+				<img src="{% static 'img/logo-resize.png' %}" alt="">
+
+			</div>
+      </div>
+
 	<footer class="footer-section set-bg" data-setbg="{% static 'img/footer-bg.jpg' %}">
+	   
+		
+
+
+
 		<div class="container">
 			<div class="row">
 				<!-- <div class="col-lg-3 col-md-6 footer-widget">
@@ -216,7 +233,7 @@
 				<div class="footer-nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
-                            <li><a href="categories.html">Advance Search</a></li>
+                            <li><a href="advance_search">Advance Search</a></li>
                             <li><a href="categories.html">Market Reports</a></li>
                             <li><a href="categories.html">Foreclosures</a></li>
 							<li><a href="about.html">ABOUT</a></li>

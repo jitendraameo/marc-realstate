@@ -4,4 +4,5 @@ from .views import *
 
 urlpatterns = [
     path('', home),
+    path('advance_search', advance_search),
 ]
