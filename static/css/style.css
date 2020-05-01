@@ -282,7 +282,7 @@ align-content: center;
 .site-logo {
 	display: inline-block;
 	
-		width: 168px;
+		max-width: 168px;
 		margin-top: 5px;
 	
 }
@@ -305,7 +305,7 @@ align-content: center;
 	display: inline-block;
 	color: #000;
 	text-transform: uppercase;
-	margin-left: 30px;
+	margin-left: 20px;
 	padding: 12px 5px;
 	font-size: 14px;
 }
@@ -1951,7 +1951,7 @@ align-content: center;
 		position: relative;
 		display: block;
 	}
-	.site-logo {margin:10px 0;}
+	.site-logo { margin:10px 0;}
 	.nav-switch {
 		position: absolute;
 		right: 0;
