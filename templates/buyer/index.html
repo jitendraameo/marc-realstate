@@ -4,16 +4,16 @@
 
 {% block pagecontent %}
 
-<!-- Hero section -->
+<!-- banner section -->
 <section class="hero-section set-bg" data-setbg="{% static 'img/bg.jpg' %}">
 	<div class="container hero-text text-white">
 		<!-- <h2>find your place with our local life style</h2> -->
-		<h2>Search Boston Real Estate</h2>
-		<p style="font-size: 30px;"> <b>Find exclusive property information from the most comprehensive data source </b> </p>
+		<h1>Search Boston Real Estate</h1>
+		<h2> Find exclusive property information from the most comprehensive data source </h2>
 		<a href="#" class="site-btn">VIEW DETAIL</a>
 	</div>
 </section>
-<!-- Hero section end -->
+<!-- banner section end -->
 
 
 <!-- Filter form section -->
@@ -41,7 +41,7 @@
 </div>
 <!-- Filter form section end -->
 
-<!-- Blog section -->
+<!-- buy home, sell home rent home  section -->
 <section class="blog-section spad">
 	<div class="container">
 		<div class="section-title text-center">
@@ -89,9 +89,7 @@
 		</div>
 	</div>
 </section>
-<!-- Blog section end -->
-
-
+<!-- buy home, sell home rent home  section end -->
 
 <!-- feature section -->
 <section class="feature-section spad">
@@ -316,7 +314,6 @@
 </section>
 <!-- feature section end -->
 
-
 <section class="properties-section spad-text">
 	<div class="container">
 		
@@ -348,19 +345,17 @@ Contact us today to find out how we can be of assistance to you!
 </div>
 </section>		
 
-
-
-
-
 <!-- Services section -->
-<section class="services-section spad set-bg" data-setbg="{% static 'img/service-bg.jpg' %}">
+<!-- <section class="services-section spad set-bg" data-setbg="{% static 'img/service-bg.jpg' %}"> -->
+	<!-- <section style="background:#aabbcc" class="services-section spad set-bg"></section> -->
 	<div class="container">
-		<div class="row">
+		<div  class="row services-box">
 			<div class="col-lg-6">
-				<img src="{% static 'img/services2.jpg' %}" alt="">
+				<img class="img-responsive" src="{% static 'img/services2.jpg' %}" alt="">
+			<p></p>
 			</div>
 			<div class="col-lg-5 offset-lg-1 pl-lg-0">
-				<div class="section-title text-white">
+				<div class="section-title service-title">
 					<h3>OUR SERVICES</h3>
 					<p>We provide the perfect service for </p>
 				</div>
@@ -399,14 +394,14 @@ Contact us today to find out how we can be of assistance to you!
 					<div class="service-item">
 						<i class="fa fa-home"></i>
 						<div class="service-text">
-							<h5>Properties Management</h5>
+							<h5> <a href="">Properties Management </a></h5>
 							<p>We provide property management services</p>
 						</div>
 					</div>
 					<div class="service-item">
 						<i class="fa fa-briefcase"></i>
 						<div class="service-text">
-							<h5>Renting and Selling</h5>
+							<h5>  <a href="">Renting and Selling</a></h5>
 							<p>We provide renting and selling  services.</p>
 						</div>
 					</div>

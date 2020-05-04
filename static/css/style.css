@@ -108,8 +108,8 @@ ol {
 }
 
 .spad {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .blog-meta2
@@ -360,7 +360,7 @@ color:#fff;
 .filter-form {
 	padding: 31px;
 	background: #e94646;
-	border-radius: 3px;
+	border-radius: 10px;
 }
 
 .filter-form input {
@@ -517,7 +517,7 @@ color:#fff;
 
 .service-item .service-text p {
 	margin-bottom: 0;
-	color: #cccccc;
+	color: #707070;
 }
 
 /*------------------
@@ -847,12 +847,12 @@ color:#fff;
 ------------------*/
 
 .footer-section {
-	padding-top: 125px;
+	padding-top: 80px;
 	padding-bottom: 25px;
 }
 
 .footer-widget p {
-	color: #ccc;
+	color: #727272;
 }
 
 .footer-widget img {
@@ -864,16 +864,16 @@ color:#fff;
 }
 
 .footer-widget .social a {
-	color: #fff;
+	color: #727272;
 	font-size: 16px;
-	margin-right: 35px;
+	margin-right: 15px;
 }
 
 .footer-widget .fw-title {
 	padding-top: 10px;
 	text-transform: uppercase;
 	margin-bottom: 35px;
-	color: #fff;
+	color: #727272;
 }
 
 .footer-widget .contact-widget {
@@ -881,7 +881,7 @@ color:#fff;
 }
 
 .footer-widget .contact-widget p i {
-	color: #fff;
+	color: #727272;
 	margin-right: 10px;
 }
 
@@ -896,7 +896,7 @@ color:#fff;
 
 .footer-widget .double-menu-widget ul a {
 	font-size: 13.9px;
-	color: #cccccc;
+	color: #727272;
 	display: inline-block;
 	margin-bottom: 10px;
 	position: relative;
@@ -909,7 +909,7 @@ color:#fff;
 
 .footer-widget .double-menu-widget ul a:hover {
 	right: -20px;
-	color: #fff;
+	color: #772277;
 }
 
 .footer-widget .double-menu-widget ul a:hover:after {
@@ -981,13 +981,13 @@ color:#fff;
 
 .footer-nav ul li a {
 	display: inline-block;
-	color: #cccccc;
+	color: #000;
 	margin-left: 10px;
 	font-size: 12px;
 }
 
 .footer-nav ul li a:hover {
-	color: #fff;
+	color: green;
 }
 
 .copyright {
@@ -998,12 +998,12 @@ color:#fff;
 .copyright p {
 	font-size: 12px;
 	margin-bottom: 0;
-	color: #bfbfbf;
+	color: #000;
 }
 
 .copyright p a {
 	font-weight: 600;
-	color: #fff;
+	color: #727272;
 }
 
 /*----------------
@@ -2171,4 +2171,91 @@ margin: 0px auto;
 padding-top: 50px;
 padding-bottom: 50px;
 
+}
+
+/* new navbar css ---           */
+
+@media screen and (min-width: 1000px)
+{
+.menu-ul {
+    right: 10px;
+    padding: 20px 0;
+	list-style: none;
+	position: absolute;
+	
+
+}
+}
+
+@media screen and (max-width: 990px)
+{
+	.menu-ul li {
+		display: block;
+		border-bottom: 1px solid #e1e1e1;
+	}
+}
+
+@media screen and (max-width: 1000px)
+{
+	.menu-ul li a 
+	{
+	font-size: 14px;
+
+	}
+}
+
+@media screen and (max-width: 990px)
+{
+	.menu-ul {
+		
+		/*box-shadow: 40px 40px 40px 40px rgba(167, 167, 167, 0.22); */
+		box-shadow: 0 10px 20px 0px rgba(167, 167, 167, 0.22);
+		background: #eee;
+	}
+}
+
+.menu-ul li {
+    display: inline;
+}
+
+.menu-ul li a {
+    display: inline-block;
+    color: #000;
+    text-transform: uppercase;
+    margin-left: 30px;
+    padding: 12px 0px;
+	font-size: 14px;
+	/* font-weight: bold; */
+}
+
+.menu-ul li a:hover {
+    color: #30caa0;
+}
+
+.container-fluid
+{
+	padding:0px;
+}
+
+.services-box
+{
+	/*box-shadow: 40px 40px 40px 40px rgba(167, 167, 167, 0.22); */
+	box-shadow: 0 10px 20px 0px rgba(167, 167, 167, 0.22);
+}
+
+
+
+.d-md-inline-flex
+{
+	list-style: none;
+}
+
+
+.d-md-inline-flex li a
+{
+	color:green;
+}
+
+.service-title {
+    margin-bottom: 18px;
 }
