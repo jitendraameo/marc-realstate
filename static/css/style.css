@@ -612,7 +612,7 @@ color:#fff;
 -----------------------------*/
 
 .feature-category-section {
-	background: #f7f7f7;
+	/* background: #f7f7f7; */
 }
 
 .f-cata {
@@ -849,6 +849,7 @@ color:#fff;
 .footer-section {
 	padding-top: 80px;
 	padding-bottom: 25px;
+	background: #f7f7f7;
 }
 
 .footer-widget p {
@@ -1065,6 +1066,7 @@ color:#fff;
 
 .page-section {
 	padding-bottom: 100px;
+	padding-top: 50px;
 }
 
 .site-pagination {
@@ -1829,7 +1831,7 @@ color:#fff;
 }
 
 .contact-right {
-	padding-top: 40px;
+	padding-top: 0px;
 	padding-left: 55px;
 }
 
@@ -2243,8 +2245,6 @@ padding-bottom: 50px;
 	box-shadow: 0 10px 20px 0px rgba(167, 167, 167, 0.22);
 }
 
-
-
 .d-md-inline-flex
 {
 	list-style: none;
@@ -2259,3 +2259,173 @@ padding-bottom: 50px;
 .service-title {
     margin-bottom: 18px;
 }
+
+/* ----------foreclosoure css----------------  */
+
+.spad-foreclouser
+{
+
+	padding-top: 50px;
+}
+
+.spad-foreclouser .container p{
+
+	text-align: justify;
+}
+
+.address-search
+{
+	padding-top: 30px;
+	padding-bottom: 90px;
+}
+
+.address-search-box
+{
+	border: 40px solid gainsboro; 
+	padding: 24px;
+}
+
+.text-red {
+
+	color: #E9464A;
+}
+
+
+/* uttpal css-----------   */
+
+/*------------------
+	aboutus_section
+---------------------*/
+.aboutus-content p{
+	font-size: 18px;
+	text-align: justify;
+}
+
+.aboutus-section
+{
+	padding-top: 100px;
+}
+
+.aboutus-content
+{
+	padding-bottom: 50px;
+}
+
+/*------------------
+	blog_section
+---------------------*/
+.blog-content p{
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.blog-section
+{
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
+.blog-row
+{
+	padding-top:30px;
+}
+
+/*------------------
+	foreclosure_section
+---------------------*/
+.foreclosure-content p{
+	font-size: 18px;
+}
+
+#foreclosure_address_search{
+	background: #fcfcfc;
+	margin-bottom: 20px;
+	padding: 12px;
+	border-radius: 4px;
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, .2)
+}
+
+#foreclosure_address_search h2 {
+	font-size: 1.125rem;
+	margin: 0 0 10px;
+	font-weight: 700;
+	color: #444;
+	border-bottom: 1px solid rgba(0, 0, 0, .2)
+}
+
+
+
+
+.address_search_inside {
+	position: relative;
+	display: block;
+}
+
+.twitter-typeahead {
+	width: 100%
+}
+
+.twitter-typeahead .typeahead,
+.twitter-typeahead input[type=text].tt-input {
+	padding: 8px;
+	margin: 0;
+	border-radius: 4px;
+	box-shadow: 0 1px rgba(0, 0, 0, .0275) inset;
+	box-shadow: 0 1px rgba(0, 0, 0, .0275), inset 0 1px rgba(0, 0, 0, .05);
+	height: 42px;
+	transition-duration: .1s
+	width: 100%;
+}
+
+.twitter-typeahead .typeahead:focus,
+.twitter-typeahead input[type=text].tt-input:focus {
+	background: #fff;
+	border: 1px solid #007ff6;
+	box-shadow: 0 0 3px #04223e
+}
+
+
+/*-----------------
+|Advance-Search css --------------------------------- 
+------------------*/
+
+.tab-link a {
+    display: inline-block;
+    color: #000;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #dadada;
+    padding: 5px 40px !important;
+    background: #fff;
+    font-weight: 500 !important;
+    text-align: center;
+    white-space: nowrap;
+    height: 40px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.location,
+.property {
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    padding: 24px;
+}
+
+#sel1 {
+    padding-right: 95px;
+}
+
+#p-id {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1.5px solid gainsboro;
+}
+
+#p-id:hover {
+    border: 1.5px solid blue;
+}
+

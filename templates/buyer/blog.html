@@ -1,0 +1,118 @@
+{% extends  'buyer/base.html' %}
+{% load static %}
+
+
+{% block pagecontent %}
+
+<!-- Hero section -->
+
+<section class="hero-section set-bg" data-setbg="{% static 'img/bg.jpg' %}">
+	<div class="container hero-text text-white">
+		<!-- <h2>find your place with our local life style</h2> -->
+		<h2>Search Boston Real Estate</h2>
+		<p> Property records, houses, condos, land and more on <b>marcfiorerealestate.com </b><br>Find property info from the most comprehensive source data.</p>
+		<a href="#" class="site-btn">VIEW DETAIL</a>
+	</div>
+</section>
+
+<!-- Hero section end -->
+
+
+<!-- Filter form section -->
+<div class="filter-search">
+	<div class="container">
+		<form class="filter-form">
+			<select>
+				<option value="City">City</option>
+			</select>
+			<select>
+				<option value="City">Area</option>
+			</select>
+			<select>
+				<option value="City">Limit From</option>
+			</select>
+			<select>
+				<option value="City">Limit To</option>
+			</select>
+					
+			<!-- <input type="text" placeholder="Enter a street name, address number or keyword"> -->
+			
+			<button class="site-btn fs-submit">SEARCH</button>
+		</form>
+	</div>
+</div>
+<!-- Filter form section end -->
+
+
+<!-- blogcontent section -->
+<section class="blog-section spad">
+	<div class="blog-content container ">
+		<h2>Area Real Estate News & Market Trends</h2>
+		<div class="row blog-row">
+			<div class="col-md-4">
+				<p>Feb 3, 2020</p>
+				<span><a href="#">Coming Soon Projects</a></span>
+
+				<p>Feb 3, 2020</p>
+				<span><a href="#">Coming Soon Projects</a></span>
+			</div>
+			<div class="col-md-4">
+				<p>Feb 3, 2020</p>
+				<span><a href="#">Coming Soon Projects</a></span>
+
+				<p>June 3, 2020</p>
+				<span><a href="#">Coming Soon Projects</a></span>
+			</div>
+			<div class="col-md-4">
+				<p>Feb 3, 2020</p>
+				<span><a href="#">Coming Soon Projects</a></span>
+
+				<p>August 30, 2020</p>
+				<span><a href="#">Coming Soon Projects</a></span>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<h3>Categories</h3>
+				<div class="row">
+					<div class="col-md-6">
+						<p><a href="#">Coming Soon</a></p>
+						<p><a href="#">Social</a></p>
+					</div>
+					<div class="col-md-6">
+						<p><a href="#">Market Updates</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<h3>Archives</h3>
+				<div class="row">
+					<div class="col-md-6">
+						<p><a href="#">March 2020</a></p>
+					</div>
+					<div class="col-md-6">
+						<p><a href="#">2017</a></p>
+					</div>
+				</div>
+			</div>			
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<h3>Sites we follow</h3>
+				<div class="row">
+					<div class="col-md-6">
+						<p><a href="#">Google Blog</a></p>
+						<p><a href="#">Twitter</a></p>
+					</div>
+					<div class="col-md-6">
+						<p><a href="#">Facebook</a></p>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+</section>
+
+{% endblock %}

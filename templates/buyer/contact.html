@@ -1,0 +1,44 @@
+{% extends  'buyer/base.html' %}
+{% load static %}
+
+
+{% block pagecontent %}
+<div style="border: 0.5px solid; margin:0px ;"> </div>
+<section class="page-section spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<img src="{% static 'img/contact.jpg' %}" alt="">
+					<br>
+					<br>
+					
+					<p><i class="fa fa-map-marker"></i>3711-2880 Nulla St, Mankato, Mississippi</p>
+					<p><i class="fa fa-envelope"></i>info.leramiz@colorlib.com</p>
+					<p><i class="fa fa-phone"></i>(+88) 666 121 4321</p>
+				</div>
+				<div class="col-lg-6">
+					<div class="contact-right">
+						<div class="section-title">
+							<h3>Get in touch</h3>
+							<p>Browse houses and flats for sale and to rent in your area</p>
+						</div>
+						<form class="contact-form">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="text" placeholder="Your name">
+								</div>
+								<div class="col-md-6">
+									<input type="text" placeholder="Your email">
+								</div>
+								<div class="col-md-12">
+									<textarea  placeholder="Your message"></textarea>
+									<button class="site-btn">SUBMIT NOW</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}
