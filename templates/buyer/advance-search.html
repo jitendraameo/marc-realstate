@@ -1,148 +1,237 @@
 {% extends  'buyer/base.html' %}
 {% load static %}
 
-
  {% block pagecontent %}
- <marquee >
-        <span style="color:red">
-        this  page is under developement..
-       </span>
- </marquee>
-<div class="mb-4" style="border: 0.5px solid; margin: 0px;"></div>
-<div class="container">
-    <section>
-        <div style="padding-left: 0px;" class="tab-link col-12">
-            <a href="" type="button" class="btn btn-primary active">Advance Search</a>
-            <a href="" type="button" class="btn btn-primary">Condo Search</a>
-            <a href="" type="button" class="btn btn-primary">Foreclosure Search</a>
-            <a href="" type="button" class="btn btn-primary">Advance Search</a>
-            <a href="" type="button" class="btn btn-primary">Advance Search</a>
-        </div>
-    </section>
-</div>
-
-<!-- Area and City Section-->
-<div class="container mt-4">
+ 
+ <!-- <hr>
+ <br> -->
+ 
+ <div class="container">
     <div class="row">
-        <div class="col">
-            <h3>Location</h3>
-            <div class="panel panel-default location">
-              <div class="row"> 
-              <div class="col-md-6"><h4>City </h4>
-              <br>
-              </div>
-              <div class="col-md-6"><h4>Area</h4> 
-              <br>
-              </div>
-              </div>
-                <div class="panel-body">
-                    <form>
-                     <div class="row"> 
-                            <div class="col-md-6">   
-              
-              <select multiple class="form-control" id="sel1">
-                <option>Boston</option>
-                <option>Boston</option> </select>
-              
-                 </div>
-                 <div class="col-md-6">   
+      <div class="col-12 ">
+        <nav>
+          <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Advance Search</a>
+            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Condo Search</a>
+            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">MLS Number Search</a>
+            <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">Foreclosure Search</a>
+            <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false">ZIP Code Search</a>
+            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Sold Search</a>
+            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Address Search</a>
+          
+        </div>
+        </nav>
+        <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+           
+            <div class="row">
+                <div class="col">
+                    <h3>Location</h3>
+                    <div class="panel panel-default location">
+                      <div class="row"> 
+                      <div class="col-md-6"><h4>City </h4>
+                      <br>
+                      </div>
+                      <div class="col-md-6"><h4>Area</h4> 
+                      <br>
+                      </div>
+                      </div>
+                        <div class="panel-body">
+                            <form>
+                             <div class="row"> 
+                             <div class="col-md-6">   
+                      
+                      <select multiple class="form-control" id="sel1">
+                        <option>Boston</option>
+                        <option>Boston</option>
+                        <option>Boston</option>
+                        <option>Boston</option>
+                        <option>Boston</option>
+                        <option>Boston</option>
+                        <option>Boston</option>
+                        <option>Boston</option>
+                        <option>Boston</option>
+                        <option>Boston</option>
+                        <option>Boston</option>
+                        <option>Boston</option>
+                        <option>Boston</option>
+                        <option>Boston</option>
 
-              <select multiple class="form-control" id="sel1">
-                <option>Medford</option>
-                <option>Lynn</option>
-              </select>
-              </div>
+                    
+                    </select>
+                      
+                         </div>
+                         <div class="col-md-6">   
+        
+                      <select multiple class="form-control" id="sel1">
+                        <option>Medford</option>
+                        <option>Lynn</option>
+                        <option>Medford</option>
+                        <option>Lynn</option>
+                        <option>Medford</option>
+                        <option>Lynn</option>
+                        <option>Medford</option>
+                        <option>Lynn</option>
+                        <option>Medford</option>
+                        <option>Lynn</option>
+                        <option>Medford</option>
+                        <option>Lynn</option>
+                        <option>Medford</option>
+                        <option>Lynn</option>
+                        <option>Medford</option>
+                        <option>Lynn</option>
+                      </select>
+                      </div>
+                                </div>
+                            </form>
                         </div>
-                    </form>
+                    </div>
+                </div>
+        
+                <div class="col">
+                    <h3>Property</h3>
+                    <div class="panel panel-default property">
+                        <div class="panel-body">
+                            <form>
+                                <h6>Property Type</h6>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                                    <label class="form-check-label" for="inlineCheckbox1">Home</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+                                    <label class="form-check-label" for="inlineCheckbox2">Condo</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+                                    <label class="form-check-label" for="inlineCheckbox2">Land</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+                                    <label class="form-check-label" for="inlineCheckbox2">Multi-Res</label>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="p-id">Price</label>
+                                        <input id="p-id" type="text" class="form-control" list="price" />
+                                        <datalist id="price">
+                          <option value="Boston"> </option>
+                          <option value="Cambridge"> </option>
+                        </datalist>
+                                    </div>
+                                    <span class="mt-4">to</span>
+                                    <div class="col">
+                                        <label for="p-id"></label>
+                                        <input id="p-id" type="text" class="form-control" list="price" />
+                                        <datalist id="price">
+                          <option value="Boston"> </option>
+                          <option value="Cambridge"> </option>
+                        </datalist>
+                                    </div>
+                                </div>
+        
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="p-id">Min Sq. Feet</label>
+                                        <input id="p-id" type="text" class="form-control" list="price" />
+                                        <datalist id="price">
+                          <option value="Boston"> </option>
+                          <option value="Cambridge"> </option>
+                        </datalist>
+                                    </div>
+                                    <div class="col">
+                                        <label for="p-id">Min Beds</label>
+                                        <input id="p-id" type="text" class="form-control" list="price" />
+                                        <datalist id="price">
+                          <option value="Boston"> </option>
+                          <option value="Cambridge"> </option>
+                        </datalist>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="p-id">Min Baths</label>
+                                        <input id="p-id" type="text" class="form-control" list="price" />
+                                        <datalist id="price">
+                                             <option value="Boston"> </option>
+                                             <option value="Cambridge"> </option>
+                                        </datalist>
+                                    </div>
+                                    <div class="col">
+                                        <label for="p-id">Year Built</label>
+                                        <input id="p-id" type="text" class="form-control" list="price" />
+                                        <datalist id="price">
+                                            <option value="Boston"> </option>
+                                            <option value="Cambridge"> </option>
+                                        </datalist>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="p-id">Style</label>
+                                        <input id="p-id" type="text" class="form-control" list="price" />
+                                        <datalist id="price">
+                                             <option value="Boston"> </option>
+                                             <option value="Cambridge"> </option>
+                                        </datalist>
+                                    </div>
+                                    <div class="col">
+                                        <label for="p-id">Foreclosure</label>
+                                        <input id="p-id" type="text" class="form-control" list="price" />
+                                        <datalist id="price">
+                                            <option value="Boston"> </option>
+                                            <option value="Cambridge"> </option>
+                                        </datalist>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="p-id">Min. Acres</label>
+                                        <input id="p-id" type="text" class="form-control" list="price" />
+                                        <datalist id="price">
+                                             <option value="Boston"> </option>
+                                             <option value="Cambridge"> </option>
+                                        </datalist>
+                                    </div>
+                                    <div class="col">
+                                        <label for="p-id">Short Sale</label>
+                                        <input id="p-id" type="text" class="form-control" list="price" />
+                                        <datalist id="price">
+                                            <option value="Boston"> </option>
+                                            <option value="Cambridge"> </option>
+                                        </datalist>
+                                    </div>
+                                </div>
+        
+        
+        
+                                <button class="btn btn-danger" id="p-submit">Search</button>
+                                <button class="btn btn-danger" id="p-submit">Map Search</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col">
-            <h3>Property</h3>
-            <div class="panel panel-default property">
-                <div class="panel-body">
-                    <form>
-                        <h6>Property Type</h6>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
-                            <label class="form-check-label" for="inlineCheckbox1">Home</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
-                            <label class="form-check-label" for="inlineCheckbox2">Condo</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
-                            <label class="form-check-label" for="inlineCheckbox2">Land</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
-                            <label class="form-check-label" for="inlineCheckbox2">Multi-Res</label>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <label for="p-id">Price</label>
-                                <input id="p-id" type="text" class="form-control" list="price" />
-                                <datalist id="price">
-                  <option value="Boston"> </option>
-                  <option value="Cambridge"> </option>
-                </datalist>
-                            </div>
-                            <span class="mt-4">to</span>
-                            <div class="col">
-                                <label for="p-id"></label>
-                                <input id="p-id" type="text" class="form-control" list="price" />
-                                <datalist id="price">
-                  <option value="Boston"> </option>
-                  <option value="Cambridge"> </option>
-                </datalist>
-                            </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col">
-                                <label for="p-id">Min Sq. Feet</label>
-                                <input id="p-id" type="text" class="form-control" list="price" />
-                                <datalist id="price">
-                  <option value="Boston"> </option>
-                  <option value="Cambridge"> </option>
-                </datalist>
-                            </div>
-                            <div class="col">
-                                <label for="p-id">Min Beds</label>
-                                <input id="p-id" type="text" class="form-control" list="price" />
-                                <datalist id="price">
-                  <option value="Boston"> </option>
-                  <option value="Cambridge"> </option>
-                </datalist>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <label for="p-id">Min Baths</label>
-                                <input id="p-id" type="text" class="form-control" list="price" />
-                                <datalist id="price">
-                  <option value="Boston"> </option>
-                  <option value="Cambridge"> </option>
-                </datalist>
-                            </div>
-                            <div class="col">
-                                <label for="p-id">Style</label>
-                                <input id="p-id" type="text" class="form-control" list="price" />
-                                <datalist id="price">
-                  <option value="Boston"> </option>
-                  <option value="Cambridge"> </option>
-                </datalist>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary" id="p-submit">Search</button>
-                    </form>
-                </div>
-            </div>
+         
         </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+          </div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+          </div>
+          <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+            Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+          </div>
+        </div>
+      
+      </div>
     </div>
 </div>
+
+
 
 {% endblock %}
 
