@@ -2430,6 +2430,87 @@ padding-bottom: 50px;
     border: 1.5px solid blue;
 }
 
+/* condo css------------------    */
+
+.condo-dropdown
+{
+    padding-right: 26px;
+	height: 200px;
+}
+
+/*------------
+Address-Search---------------------------------
+-------------*/
+
+/* .address-search {
+    margin-left: 124px;
+} */
+
+.search-panel
+{
+width: 70%;
+margin: 0px auto;
+}
+
+@media (min-width: 992px) {
+    .address-search {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .address-search {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .address-search {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .address-search {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .address-search {
+        width: 100%;
+    }
+}
+
+/* ------------------  zip code search css ---------------  */
+#zip {
+    padding-right: 95px;
+}
+
+#zip-id1,
+#zip-id2,
+#zip-id3,
+#zip-id4,
+#zip-id5,
+#zip-id6 {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1.5px solid gainsboro;
+}
+
+#zip-id1:hover,
+#zip-id2:hover,
+#zip-id3:hover,
+#zip-id4:hover,
+#zip-id5:hover,
+#zip-id6:hover {
+    border: 1.5px solid blue;
+}
+
+
+
 /*---------------------------------- tabs css ------------------   */
 
 
@@ -2450,6 +2531,8 @@ nav > .nav.nav-tabs{
 	  background:#272e38;
 	  border-radius:0;
   }
+
+
   
   nav > div a.nav-item.nav-link.active:after
    {
