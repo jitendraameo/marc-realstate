@@ -293,7 +293,7 @@ color:#fff;
 .site-logo img
 {
 
-	height: 100px;
+	height: 70px;
 }
 
 
@@ -972,7 +972,7 @@ color:#fff;
 }
 
 .footer-nav {
-	float: right;
+	float: left;
 }
 
 .footer-nav ul {
@@ -2195,10 +2195,10 @@ p{
 
 .footer-logo
 {
-width:500px ;
+width:100% ;
 margin: 0px auto;
 padding-top: 50px;
-padding-bottom: 50px;
+padding-bottom: 0px;
 
 }
 
@@ -2243,13 +2243,19 @@ padding-bottom: 50px;
 	}
 }
 
+
+.navbar
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
 .menu-ul li {
     display: inline;
 }
 
 .menu-ul li a {
     display: inline-block;
-    color: blue;
+    color: #e94646;
     text-transform: uppercase;
     margin-left: 30px;
     padding: 12px 0px;
@@ -2590,3 +2596,313 @@ nav > .nav.nav-tabs{
   }
 
   /*-------------------------  tab css end ---------------- */
+
+  /*instant offer and home value section*/
+
+/*instant offer and home value section*/
+
+.instant-offer{
+	padding-top: 20px;
+	position: relative;
+	
+}
+
+.instant-offer .text{
+	background:#595760;
+}
+
+.instant-offer img {
+  width: 100%;
+  height: auto;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.instant-offer-value-btn{
+ 	position: absolute;
+ 	text-align: center;
+	display: inline-block;
+	padding: 15px 70px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 16px;
+	letter-spacing: 2px;
+	border-radius: 5px;
+	min-width: 170px;
+	text-align: center;
+	/*background: #30caa0; */
+	background: #e94646;
+	cursor: pointer;
+	border: none;
+	color: #fff;
+	top: 26%;
+	left: 36%;
+}
+
+/*  home value button css ..................   */
+
+
+
+.home-value .text{
+	background:#6982da;	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+.offer-value-btn{
+ 	position: absolute;
+	display: inline-block;
+	padding: 15px 70px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 16px;
+	letter-spacing: 2px;
+	border-radius: 5px;
+	min-width: 170px;
+	text-align: center;
+	/*background: #30caa0; */
+	background: #e94646;
+	cursor: pointer;
+	border: none;
+	color: #fff;
+	top:40%;
+	left: 36%;
+	z-index: 9999;
+}
+
+@media only screen and (max-width: 920px) 
+{
+	.offer-value-btn{
+		position: absolute;
+	   display: inline-block;
+	   padding: 15px 70px;
+	   font-size: 16px;
+	   font-weight: 600;
+	   line-height: 16px;
+	   letter-spacing: 2px;
+	   border-radius: 5px;
+	   min-width: 170px;
+	   text-align: center;
+	   /*background: #30caa0; */
+	   background: #e94646;
+	   cursor: pointer;
+	   border: none;
+	   color: #fff;
+	   top:40%;
+	   left: 36%;
+	   z-index: 9999;
+   }
+}
+
+@media only screen and (min-width: 1020px) 
+{
+	.offer-value-btn{
+		position: absolute;
+	   display: inline-block;
+	   padding: 15px 70px;
+	   font-size: 16px;
+	   font-weight: 600;
+	   line-height: 16px;
+	   letter-spacing: 2px;
+	   border-radius: 5px;
+	   min-width: 170px;
+	   text-align: center;
+	   /*background: #30caa0; */
+	   background: #e94646;
+	   cursor: pointer;
+	   border: none;
+	   color: #fff;
+	   top:46%;
+	   left: 36%;
+	   z-index: 9999;
+   }
+}
+
+@media only screen and (min-width: 1200px) 
+{
+	.offer-value-btn{
+		position: absolute;
+	   display: inline-block;
+	   padding: 15px 70px;
+	   font-size: 16px;
+	   font-weight: 600;
+	   line-height: 16px;
+	   letter-spacing: 2px;
+	   border-radius: 5px;
+	   min-width: 170px;
+	   text-align: center;
+	   /*background: #30caa0; */
+	   background: #e94646;
+	   cursor: pointer;
+	   border: none;
+	   color: #fff;
+	   top:47.5%;
+	   left: 36%;
+	   z-index: 9999;
+   }
+}
+
+@media only screen and (min-width: 1440px) 
+{
+	.offer-value-btn{
+		position: absolute;
+	   display: inline-block;
+	   padding: 15px 70px;
+	   font-size: 16px;
+	   font-weight: 600;
+	   line-height: 16px;
+	   letter-spacing: 2px;
+	   border-radius: 5px;
+	   min-width: 170px;
+	   text-align: center;
+	   /*background: #30caa0; */
+	   background: #e94646;
+	   cursor: pointer;
+	   border: none;
+	   color: #fff;
+	   top:48.5%;
+	   left: 36%;
+	   z-index: 9999;
+   }
+}
+
+@media only screen and (min-width: 1550px) 
+{
+	.offer-value-btn{
+		position: absolute;
+	   display: inline-block;
+	   padding: 15px 70px;
+	   font-size: 16px;
+	   font-weight: 600;
+	   line-height: 16px;
+	   letter-spacing: 2px;
+	   border-radius: 5px;
+	   min-width: 170px;
+	   text-align: center;
+	   /*background: #30caa0; */
+	   background: #e94646;
+	   cursor: pointer;
+	   border: none;
+	   color: #fff;
+	   top:49%;
+	   left: 40%;
+	   z-index: 9999;
+   }
+}
+
+@media only screen and (min-width: 2000px) 
+{
+	.offer-value-btn{
+		position: absolute;
+	   display: inline-block;
+	   padding: 15px 70px;
+	   font-size: 16px;
+	   font-weight: 600;
+	   line-height: 16px;
+	   letter-spacing: 2px;
+	   border-radius: 5px;
+	   min-width: 170px;
+	   text-align: center;
+	   /*background: #30caa0; */
+	   background: #e94646;
+	   cursor: pointer;
+	   border: none;
+	   color: #fff;
+	   top:49.5%;
+	   left: 40%;
+	   z-index: 9999;
+   }
+}
+
+@media only screen and (min-width: 2150px) 
+{
+	.offer-value-btn{
+		position: absolute;
+	   display: inline-block;
+	   padding: 15px 70px;
+	   font-size: 16px;
+	   font-weight: 600;
+	   line-height: 16px;
+	   letter-spacing: 2px;
+	   border-radius: 5px;
+	   min-width: 170px;
+	   text-align: center;
+	   /*background: #30caa0; */
+	   background: #e94646;
+	   cursor: pointer;
+	   border: none;
+	   color: #fff;
+	   top:50%;
+	   left: 40%;
+	   z-index: 9999;
+   }
+}
+
+
+@media only screen and (min-width: 2560px) 
+{
+	.offer-value-btn{
+		position: absolute;
+	   display: inline-block;
+	   padding: 15px 70px;
+	   font-size: 16px;
+	   font-weight: 600;
+	   line-height: 16px;
+	   letter-spacing: 2px;
+	   border-radius: 5px;
+	   min-width: 170px;
+	   text-align: center;
+	   /*background: #30caa0; */
+	   background: #e94646;
+	   cursor: pointer;
+	   border: none;
+	   color: #fff;
+	   top:51%;
+	   left: 42%;
+	   z-index: 9999;
+   }
+}
+
+@media only screen and (min-width: 2150px) 
+{
+	.offer-value-btn{
+		position: absolute;
+	   display: inline-block;
+	   padding: 15px 70px;
+	   font-size: 16px;
+	   font-weight: 600;
+	   line-height: 16px;
+	   letter-spacing: 2px;
+	   border-radius: 5px;
+	   min-width: 170px;
+	   text-align: center;
+	   /*background: #30caa0; */
+	   background: #e94646;
+	   cursor: pointer;
+	   border: none;
+	   color: #fff;
+	   top:50%;
+	   left: 40%;
+	   z-index: 9999;
+   }
+}
+
+
+
+.center{
+	text-align: center;
+}
+
+.home-value img {
+	width: 100%;
+	height: auto;
+	display: block; 
+	/* margin-left: auto; 
+	margin-right: auto; */
+  }
+  /*instant offer and home value section end*/
+
+  
