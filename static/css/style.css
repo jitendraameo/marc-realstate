@@ -967,7 +967,7 @@ color:#fff;
 .footer-bottom {
 	overflow: hidden;
 	padding-top: 30px;
-	margin-top: 65px;
+	margin-top: 50px;
 	border-top: 1px solid #324a4e;
 }
 
@@ -2355,8 +2355,8 @@ padding-bottom: 0px;
 
 .blog-section
 {
-	padding-top:50px;
-	padding-bottom:50px;
+	padding-top:55px;
+	padding-bottom:35px;
 }
 
 .blog-row
@@ -2604,6 +2604,7 @@ nav > .nav.nav-tabs{
 .instant-offer{
 	padding-top: 20px;
 	position: relative;
+	padding-bottom:50px;
 	
 }
 
@@ -2668,7 +2669,7 @@ nav > .nav.nav-tabs{
 	cursor: pointer;
 	border: none;
 	color: #fff;
-	top:40%;
+	top:41%;
 	left: 36%;
 	z-index: 9999;
 }
@@ -2739,7 +2740,7 @@ nav > .nav.nav-tabs{
 	   cursor: pointer;
 	   border: none;
 	   color: #fff;
-	   top:47.5%;
+	   top:48%;
 	   left: 36%;
 	   z-index: 9999;
    }
@@ -2763,7 +2764,7 @@ nav > .nav.nav-tabs{
 	   cursor: pointer;
 	   border: none;
 	   color: #fff;
-	   top:48.5%;
+	   top:49%;
 	   left: 36%;
 	   z-index: 9999;
    }
@@ -2835,8 +2836,8 @@ nav > .nav.nav-tabs{
 	   cursor: pointer;
 	   border: none;
 	   color: #fff;
-	   top:50%;
-	   left: 40%;
+	   top:50.5%;
+	   left: 42%;
 	   z-index: 9999;
    }
 }
@@ -2866,7 +2867,7 @@ nav > .nav.nav-tabs{
    }
 }
 
-@media only screen and (min-width: 2150px) 
+@media only screen and (min-width: 2760px) 
 {
 	.offer-value-btn{
 		position: absolute;
@@ -2884,12 +2885,59 @@ nav > .nav.nav-tabs{
 	   cursor: pointer;
 	   border: none;
 	   color: #fff;
-	   top:50%;
-	   left: 40%;
+	   top:51.5%;
+	   left: 42%;
 	   z-index: 9999;
    }
 }
 
+@media only screen and (min-width: 3150px) 
+{
+	.offer-value-btn{
+		position: absolute;
+	   display: inline-block;
+	   padding: 15px 70px;
+	   font-size: 16px;
+	   font-weight: 600;
+	   line-height: 16px;
+	   letter-spacing: 2px;
+	   border-radius: 5px;
+	   min-width: 170px;
+	   text-align: center;
+	   /*background: #30caa0; */
+	   background: #e94646;
+	   cursor: pointer;
+	   border: none;
+	   color: #fff;
+	   top:52.5%;
+	   left: 42%;
+	   z-index: 9999;
+   }
+}
+
+@media only screen and (min-width: 3360px) 
+{
+	.offer-value-btn{
+		position: absolute;
+	   display: inline-block;
+	   padding: 15px 70px;
+	   font-size: 16px;
+	   font-weight: 600;
+	   line-height: 16px;
+	   letter-spacing: 2px;
+	   border-radius: 5px;
+	   min-width: 170px;
+	   text-align: center;
+	   /*background: #30caa0; */
+	   background: #e94646;
+	   cursor: pointer;
+	   border: none;
+	   color: #fff;
+	   top:53%;
+	   left: 42%;
+	   z-index: 9999;
+   }
+}
 
 
 .center{
@@ -2903,6 +2951,9 @@ nav > .nav.nav-tabs{
 	/* margin-left: auto; 
 	margin-right: auto; */
   }
+
+  
+
   /*instant offer and home value section end*/
 
   
