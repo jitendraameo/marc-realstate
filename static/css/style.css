@@ -336,19 +336,29 @@ color:#fff;
 }
 
 .hero-text {
-	padding-top: 340px;
+	padding-top: 300px;
 	text-align: center;
 }
 
-.hero-text h2 {
+.hero-text h1
+{
 	text-transform: uppercase;
+	font-family: inherit;
+
+}
+
+.hero-text h2 {
+	/* text-transform: uppercase; */
 	margin-bottom: 20px;
+	font-style: italic;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .hero-text p {
 	font-size: 22px;
 	margin-bottom: 50px;
 }
+
 
 /*------------------
   Filter search
@@ -2260,7 +2270,7 @@ padding-bottom: 0px;
     margin-left: 30px;
     padding: 12px 0px;
 	font-size: 14px;
-	/* font-weight: bold; */
+    font-weight: bold; 
 }
 
 .menu-ul li a:hover {
@@ -2741,7 +2751,7 @@ nav > .nav.nav-tabs{
 	   cursor: pointer;
 	   border: none;
 	   color: #fff;
-	   top:48%;
+	   top:48.25%;
 	   left: 36%;
 	   z-index: 9999;
    }
