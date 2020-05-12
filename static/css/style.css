@@ -2975,4 +2975,9 @@ nav > .nav.nav-tabs{
 color:#2d127c;
 
   }
+
+  .card-body
+  {
+	  height: 348px;
+  }
   
