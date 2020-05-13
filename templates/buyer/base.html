@@ -35,7 +35,7 @@
 	<div class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-inverse">
+                <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-inverse">
                     <a class="navbar-brand site-logo" href="#"><img  src="{% static 'img/logo/FMRC-Logo.png' %}" class="img-responsive"  alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                                                                   <span class="navbar-toggler-icon"></span>
@@ -56,8 +56,41 @@
 						</ul>
 						
                     </div>
-                </nav>
+				</nav> -->
+				
+				<nav class="navbar navbar-expand-lg navbar-light bg-white navbar-inverse">
+                    <a class="navbar-brand site-logo" href="#"><img  src="{% static 'img/logo/FMRC-Logo.png' %}" class="img-responsive"  alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                                                                  <span class="navbar-toggler-icon"></span>
+                                                                                </button>
 
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="menu-ul navbar-nav  ">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="advance-search">Advanced Search</a></li>
+                            <li><a href="market_report">Market Reports</a></li>
+                            <li><a href="foreclosures">Foreclosures</a></li>
+                            <li><a href="about">ABOUT</a></li>
+                            <li><a href="blog">Social Media</a></li>
+                            <li><a href="contact">Contact Us</a></li>
+                            <!-- <li><a class="login-link" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">
+								 Login </a></li> -->
+								 
+
+
+                        </ul>
+
+                        <ul class="menu-ul" id="login-icon">
+                    		<li><a data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();" title="Login">
+  							<img style="width:25px;" src="{% static 'img/social.svg' %}"></a></li>
+						</ul>
+						
+						
+
+                    </div>
+				</nav>
+				
+				
             </div>
         </div>
 

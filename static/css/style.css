@@ -2267,9 +2267,9 @@ padding-bottom: 0px;
     display: inline-block;
     color: #ce0000;
     text-transform: uppercase;
-    margin-left: 30px;
+    margin-left: 25px;
     padding: 12px 0px;
-	font-size: 14px;
+	font-size: 15px;
     font-weight: bold; 
 }
 
@@ -3041,3 +3041,29 @@ color:#2d127c;
   }
   
   
+  /*---------- css for login icon --------------- */
+
+  #login-icon{
+	right: 0px;
+	position: absolute;
+}
+
+@media screen and (min-width: 1000px)
+{
+	.menu-ul {
+	    right: 10px;
+	    padding: 20px 0;
+		list-style: none;
+		position: relative;
+	}
+}
+
+.login-link
+{
+display: none;	
+}
+
+.text-white{
+	color: #ffff;
+	font-weight: 600;	
+}
