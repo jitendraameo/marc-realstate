@@ -125,7 +125,9 @@
 			<img class="img-reponsive" src="{% static 'img/re_instant.jpg' %} " alt="">
 		</div>
 
-		<div class="center">
+		<div>
+			
+			<!-- <a href="#" class="instant-offer-value-btn" style="position: absolute; left: 50%; top:40%; transform: translate3d(-50%, -50%,0);">Get an Instant Offer</a> -->
 			<a href="#" class="instant-offer-value-btn">Get an Instant Offer</a>
 		</div>
 		
@@ -136,11 +138,12 @@
 	<div class="container home-value">
 		
 		<div class="image">
-			<img class="img-responsive" src="{% static 'img/re_home_value.jpg' %} " alt="" style="display: block; margin-left: auto; margin-right: auto;">
+			<img class="img-responsive" src="{% static 'img/re_home_value.jpg' %} " alt="">
 		</div>
-		
-			<div class="center">
-				<a href="#" class="offer-value-btn">See your Home Value</a>
+					
+			<div>
+				<a class="home-value-btn" href="#">See your Home Value</a>
+				
 			</div>
 		
 	</div>
@@ -410,22 +413,48 @@ Contact us today to find out how we can be of assistance to you!
 		</div>
 		<div class="row">
 			<div class="col-lg-3 col-md-6 f-cata">
-				<img src="{% static 'img/feature-cate/1.jpg' %}" alt="">
+				<div class="card">
+					<div class="card-body"> 
+				<img src="{% static 'img/single_family.jpg' %}" alt="">
+					</div>
+					<div class="card-footer">
 				<h5>Single Family Home</h5>
 			</div>
+			</div>
+			</div>
 			<div class="col-lg-3 col-md-6 f-cata">
-				<img src="{% static 'img/feature-cate/2.jpg' %}" alt="">
+				<div class="card">
+					<div class="card-body"> 
+				<img src="{% static 'img/multi_family.jpeg' %}" alt="">
+					</div>
+					<div class="card-footer">
 				<h5>Multi Family Home</h5>
+				</div>
+				</div>
 			</div>
 			<div class="col-lg-3 col-md-6 f-cata">
-				<img src="{% static 'img/feature-cate/3.jpg' %}" alt="">
-				<h5>Resort Villas</h5>
-			</div>
-			<div class="col-lg-3 col-md-6 f-cata">
-				<img src="{% static 'img/feature-cate/4.jpg' %}" alt="">
+				<div class="card">
+					<div class="card-body"> 
+				<img src="{% static 'img/Condo.jpg' %}" alt="">
+				</div>
+				<div class="card-footer">
 				<h5>Condo</h5>
 			</div>
+			</div>
+			</div>
+			<div class="col-lg-3 col-md-6 f-cata">
+
+				<div class="card">
+					<div class="card-body"> 
+				<img src="{% static 'img/Townhouse.jpg' %}" alt="">
+					</div>
+					<div class="card-footer">
+				<h5>Townhome</h5>
+			</div>
+
+			</div>
 		</div>
+	</div>
 	</div>
 </section>
 <!-- feature category section end-->

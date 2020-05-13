@@ -2274,7 +2274,7 @@ padding-bottom: 0px;
 }
 
 .menu-ul li a:hover {
-    color: #30caa0;
+    color: #2d127c;
 }
 
 .container-fluid
@@ -2636,10 +2636,10 @@ nav > .nav.nav-tabs{
  	position: absolute;
  	text-align: center;
 	display: inline-block;
-	padding: 10px 19px;
-	font-size: 16px;
-	font-weight: 600;
-	line-height: 16px;
+	padding: 9px 16px;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 13px;
 	letter-spacing: 2px;
 	border-radius: 5px;
 	min-width: 170px;
@@ -2649,18 +2649,43 @@ nav > .nav.nav-tabs{
 	cursor: pointer;
 	border: none;
 	color: #fff;
-	top: 34%;
-	left: 43%;
+	top: 39%;
+	left: 50%;
+	transform: translate3d(-50%, -50%,0);
+
 }
 
 /*  home value button css ..................   */
-
 
 
 .home-value .text{
 	background:#6982da;	
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.home-value-btn
+{
+	position: absolute;
+	display: inline-block;
+	padding: 9px 16px;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 13px;
+	letter-spacing: 2px;
+	border-radius: 5px;
+	min-width: 170px;
+	text-align: center;
+	/*background: #30caa0; */
+	background: #ce0000;
+	cursor: pointer;
+	border: none;
+	color: #fff;
+	top:28.75%;
+	left: 50%;
+	z-index: 9999;
+	transform: translate3d(-50%, -50%,0);
+
 }
 
 
@@ -2932,7 +2957,7 @@ nav > .nav.nav-tabs{
 	.offer-value-btn{
 		position: absolute;
 	   display: inline-block;
-	   padding: 10px 16px;
+	   padding: 12px 16px;
 	   font-size: 16px;
 	   font-weight: 600;
 	   line-height: 16px;
@@ -2958,6 +2983,11 @@ nav > .nav.nav-tabs{
 	text-align: center;
 }
 
+.home-value
+{
+	position: relative;
+}
+
 .home-value img {
 	width: 100%;
 	height: auto;
@@ -2980,8 +3010,10 @@ color:#2d127c;
 
   }
 
-  .card-body
+  .blog-section .card-body
   {
-	  height: 348px;
+	  height: 350px;
+	  
   }
+  
   
