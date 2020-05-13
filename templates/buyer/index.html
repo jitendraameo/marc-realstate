@@ -22,21 +22,47 @@
 	<div class="container">
 		<form class="filter-form" action="property_result">
 			<select name="CityChoice">
-				<option value="City">City</option>
-			</select>
-			<select name="AreaChoice">
-				<option value="City">Area</option>
-			</select>
-			<select name="LimitFrom">
-				<option value="Any">Limit From</option>
-			</select>
-			<select name="LimitTo">
-				<option value="Any">Limit To</option>
-			</select>
-					
-			
-			<button class="site-btn fs-submit">SEARCH</button>
-		</form>
+				<option value="">City Choice</option>
+				<!-- <option value="">Any</option> -->
+				{% for city in cities %}
+				<option value="{{ city.name }}">{{ city.name }}</option>
+				{% endfor %}
+				</select>
+				<select name="AreaChoice">
+				<option value="">Area Choice</option>
+				<!-- <option value="">Any</option> -->
+				{% for area in areas %}
+				<option value="{{ area.area_name }}">{{ area.area_name }}</option>
+				{% endfor %}
+				</select>
+				<select name="LimitFrom">
+				<option value="">Limit From</option>
+				<!-- <option value="">Any</option> -->
+				<option value="1000">$1000</option>
+				<option value="2000">$2000</option>
+				<option value="3000">$3000</option>
+				<option value="5000">$5000</option>
+				<option value="10000">$10000</option>
+				<option value="15000">$15000</option>
+				<option value="20000">$20000</option>
+	
+	
+	
+				</select>
+				<select name="LimitTo">
+				<option value="">Limit To</option>
+				<!-- <option value="">Any</option> -->
+				<option value="1000">$1000</option>
+				<option value="2000">$2000</option>
+				<option value="3000">$3000</option>
+				<option value="5000">$5000</option>
+				<option value="10000">$10000</option>
+				<option value="15000">$15000</option>
+				<option value="20000">$20000</option>
+				</select>
+	
+	
+				<button class="site-btn fs-submit">SEARCH</button>		</form>
 	</div>
 </div>
 <!-- Filter form section end -->
@@ -96,7 +122,7 @@
 	<div class="container instant-offer">
 		
 		<div class="image">
-			<img class="img-reponsive rounded" src="{% static 'img/instant_offer.jpg' %} " alt="">
+			<img class="img-reponsive" src="{% static 'img/re_instant.jpg' %} " alt="">
 		</div>
 
 		<div class="center">
@@ -110,7 +136,7 @@
 	<div class="container home-value">
 		
 		<div class="image">
-			<img class="img-responsive rounded" src="{% static 'img/home_valuation.jpg' %} " alt="" style="display: block; margin-left: auto; margin-right: auto;">
+			<img class="img-responsive" src="{% static 'img/re_home_value.jpg' %} " alt="" style="display: block; margin-left: auto; margin-right: auto;">
 		</div>
 		
 			<div class="center">
@@ -385,11 +411,11 @@ Contact us today to find out how we can be of assistance to you!
 		<div class="row">
 			<div class="col-lg-3 col-md-6 f-cata">
 				<img src="{% static 'img/feature-cate/1.jpg' %}" alt="">
-				<h5>Apartment for rent</h5>
+				<h5>Single Family Home</h5>
 			</div>
 			<div class="col-lg-3 col-md-6 f-cata">
 				<img src="{% static 'img/feature-cate/2.jpg' %}" alt="">
-				<h5>Family Home</h5>
+				<h5>Multi Family Home</h5>
 			</div>
 			<div class="col-lg-3 col-md-6 f-cata">
 				<img src="{% static 'img/feature-cate/3.jpg' %}" alt="">
@@ -397,7 +423,7 @@ Contact us today to find out how we can be of assistance to you!
 			</div>
 			<div class="col-lg-3 col-md-6 f-cata">
 				<img src="{% static 'img/feature-cate/4.jpg' %}" alt="">
-				<h5>Office Building</h5>
+				<h5>Condo</h5>
 			</div>
 		</div>
 	</div>

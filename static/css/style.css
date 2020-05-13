@@ -2629,13 +2629,14 @@ nav > .nav.nav-tabs{
   margin-left: auto; 
   margin-right: auto;
   box-shadow: 1px 3px 0px hsla(213, 62%, 48%, 0.16);
+  border-radius: 7px;
 }
 
 .instant-offer-value-btn{
  	position: absolute;
  	text-align: center;
 	display: inline-block;
-	padding: 15px 70px;
+	padding: 10px 19px;
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 16px;
@@ -2648,8 +2649,8 @@ nav > .nav.nav-tabs{
 	cursor: pointer;
 	border: none;
 	color: #fff;
-	top: 26%;
-	left: 36%;
+	top: 34%;
+	left: 43%;
 }
 
 /*  home value button css ..................   */
@@ -2667,7 +2668,7 @@ nav > .nav.nav-tabs{
 .offer-value-btn{
  	position: absolute;
 	display: inline-block;
-	padding: 15px 70px;
+	padding: 10px 16px;
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 16px;
@@ -2680,8 +2681,8 @@ nav > .nav.nav-tabs{
 	cursor: pointer;
 	border: none;
 	color: #fff;
-	top:41%;
-	left: 36%;
+	top:39%;
+	left: 37%;
 	z-index: 9999;
 }
 
@@ -2690,7 +2691,7 @@ nav > .nav.nav-tabs{
 	.offer-value-btn{
 		position: absolute;
 	   display: inline-block;
-	   padding: 15px 70px;
+	   padding: 10px 16px;
 	   font-size: 16px;
 	   font-weight: 600;
 	   line-height: 16px;
@@ -2703,8 +2704,8 @@ nav > .nav.nav-tabs{
 	   cursor: pointer;
 	   border: none;
 	   color: #fff;
-	   top:40%;
-	   left: 36%;
+	   top:37%;
+	   left: 39%;
 	   z-index: 9999;
    }
 }
@@ -2714,7 +2715,55 @@ nav > .nav.nav-tabs{
 	.offer-value-btn{
 		position: absolute;
 	   display: inline-block;
-	   padding: 15px 70px;
+	   padding: 10px 16px;
+	   font-size: 16px;
+	   font-weight: 600;
+	   line-height: 16px;
+	   letter-spacing: 2px;
+	   border-radius: 5px;
+	   min-width: 170px;
+	   text-align: center;
+	   /*background: #30caa0; */
+	   background: #ce0000;
+	   cursor: pointer;
+	   border: none;
+	   color: #fff;
+	   top:43%;
+	   left: 39%;
+	   z-index: 9999;
+   }
+}
+
+@media only screen and (min-width: 1200px) 
+{
+	.offer-value-btn{
+		position: absolute;
+	   display: inline-block;
+	   padding: 10px 16px;
+	   font-size: 16px;
+	   font-weight: 600;
+	   line-height: 16px;
+	   letter-spacing: 2px;
+	   border-radius: 5px;
+	   min-width: 170px;
+	   text-align: center;
+	   /*background: #30caa0; */
+	   background: #ce0000;
+	   cursor: pointer;
+	   border: none;
+	   color: #fff;
+	   top:45.50%;
+	   left: 41%;
+	   z-index: 9999;
+   }
+}
+
+@media only screen and (min-width: 1440px) 
+{
+	.offer-value-btn{
+		position: absolute;
+	   display: inline-block;
+	   padding: 10px 16px;
 	   font-size: 16px;
 	   font-weight: 600;
 	   line-height: 16px;
@@ -2728,55 +2777,7 @@ nav > .nav.nav-tabs{
 	   border: none;
 	   color: #fff;
 	   top:46%;
-	   left: 36%;
-	   z-index: 9999;
-   }
-}
-
-@media only screen and (min-width: 1200px) 
-{
-	.offer-value-btn{
-		position: absolute;
-	   display: inline-block;
-	   padding: 15px 70px;
-	   font-size: 16px;
-	   font-weight: 600;
-	   line-height: 16px;
-	   letter-spacing: 2px;
-	   border-radius: 5px;
-	   min-width: 170px;
-	   text-align: center;
-	   /*background: #30caa0; */
-	   background: #ce0000;
-	   cursor: pointer;
-	   border: none;
-	   color: #fff;
-	   top:48.25%;
-	   left: 36%;
-	   z-index: 9999;
-   }
-}
-
-@media only screen and (min-width: 1440px) 
-{
-	.offer-value-btn{
-		position: absolute;
-	   display: inline-block;
-	   padding: 15px 70px;
-	   font-size: 16px;
-	   font-weight: 600;
-	   line-height: 16px;
-	   letter-spacing: 2px;
-	   border-radius: 5px;
-	   min-width: 170px;
-	   text-align: center;
-	   /*background: #30caa0; */
-	   background: #ce0000;
-	   cursor: pointer;
-	   border: none;
-	   color: #fff;
-	   top:49%;
-	   left: 36%;
+	   left: 42%;
 	   z-index: 9999;
    }
 }
@@ -2786,7 +2787,7 @@ nav > .nav.nav-tabs{
 	.offer-value-btn{
 		position: absolute;
 	   display: inline-block;
-	   padding: 15px 70px;
+	   padding: 10px 16px;
 	   font-size: 16px;
 	   font-weight: 600;
 	   line-height: 16px;
@@ -2799,8 +2800,8 @@ nav > .nav.nav-tabs{
 	   cursor: pointer;
 	   border: none;
 	   color: #fff;
-	   top:49%;
-	   left: 40%;
+	   top:46%;
+	   left: 37%;
 	   z-index: 9999;
    }
 }
@@ -2810,7 +2811,104 @@ nav > .nav.nav-tabs{
 	.offer-value-btn{
 		position: absolute;
 	   display: inline-block;
-	   padding: 15px 70px;
+	   padding: 10px 16px;
+	   font-size: 16px;
+	   font-weight: 600;
+	   line-height: 16px;
+	   letter-spacing: 2px;
+	   border-radius: 5px;
+	   min-width: 170px;
+	   text-align: center;
+	   /*background: #30caa0; */
+	   background: #ce0000;
+	   cursor: pointer;
+	   border: none;
+	   color: #fff;
+	   top:46.5%;
+	   left: 43%;
+	   z-index: 9999;
+   }
+}
+
+@media only screen and (min-width: 2150px) 
+{
+	.offer-value-btn{
+		position: absolute;
+	   display: inline-block;
+	   padding: 10px 16px;
+	   font-size: 16px;
+	   font-weight: 600;
+	   line-height: 16px;
+	   letter-spacing: 2px;
+	   border-radius: 5px;
+	   min-width: 170px;
+	   text-align: center;
+	   /*background: #30caa0; */
+	   background: #ce0000;
+	   cursor: pointer;
+	   border: none;
+	   color: #fff;
+	   top:47.5%;
+	   left: 45%;
+	   z-index: 9999;
+   }
+}
+
+
+@media only screen and (min-width: 2560px) 
+{
+	.offer-value-btn{
+		position: absolute;
+	   display: inline-block;
+	   padding: 10px 16px;
+	   font-size: 16px;
+	   font-weight: 600;
+	   line-height: 16px;
+	   letter-spacing: 2px;
+	   border-radius: 5px;
+	   min-width: 170px;
+	   text-align: center;
+	   /*background: #30caa0; */
+	   background: #ce0000;
+	   cursor: pointer;
+	   border: none;
+	   color: #fff;
+	   top:48%;
+	   left: 45%;
+	   z-index: 9999;
+   }
+}
+
+@media only screen and (min-width: 2760px) 
+{
+	.offer-value-btn{
+		position: absolute;
+	   display: inline-block;
+	   padding: 10px 16px;
+	   font-size: 16px;
+	   font-weight: 600;
+	   line-height: 16px;
+	   letter-spacing: 2px;
+	   border-radius: 5px;
+	   min-width: 170px;
+	   text-align: center;
+	   /*background: #30caa0; */
+	   background: #ce0000;
+	   cursor: pointer;
+	   border: none;
+	   color: #fff;
+	   top:48.5%;
+	   left: 45%;
+	   z-index: 9999;
+   }
+}
+
+@media only screen and (min-width: 3150px) 
+{
+	.offer-value-btn{
+		position: absolute;
+	   display: inline-block;
+	   padding: 10px 16px;
 	   font-size: 16px;
 	   font-weight: 600;
 	   line-height: 16px;
@@ -2824,104 +2922,7 @@ nav > .nav.nav-tabs{
 	   border: none;
 	   color: #fff;
 	   top:49.5%;
-	   left: 40%;
-	   z-index: 9999;
-   }
-}
-
-@media only screen and (min-width: 2150px) 
-{
-	.offer-value-btn{
-		position: absolute;
-	   display: inline-block;
-	   padding: 15px 70px;
-	   font-size: 16px;
-	   font-weight: 600;
-	   line-height: 16px;
-	   letter-spacing: 2px;
-	   border-radius: 5px;
-	   min-width: 170px;
-	   text-align: center;
-	   /*background: #30caa0; */
-	   background: #ce0000;
-	   cursor: pointer;
-	   border: none;
-	   color: #fff;
-	   top:50.5%;
-	   left: 42%;
-	   z-index: 9999;
-   }
-}
-
-
-@media only screen and (min-width: 2560px) 
-{
-	.offer-value-btn{
-		position: absolute;
-	   display: inline-block;
-	   padding: 15px 70px;
-	   font-size: 16px;
-	   font-weight: 600;
-	   line-height: 16px;
-	   letter-spacing: 2px;
-	   border-radius: 5px;
-	   min-width: 170px;
-	   text-align: center;
-	   /*background: #30caa0; */
-	   background: #ce0000;
-	   cursor: pointer;
-	   border: none;
-	   color: #fff;
-	   top:51%;
-	   left: 42%;
-	   z-index: 9999;
-   }
-}
-
-@media only screen and (min-width: 2760px) 
-{
-	.offer-value-btn{
-		position: absolute;
-	   display: inline-block;
-	   padding: 15px 70px;
-	   font-size: 16px;
-	   font-weight: 600;
-	   line-height: 16px;
-	   letter-spacing: 2px;
-	   border-radius: 5px;
-	   min-width: 170px;
-	   text-align: center;
-	   /*background: #30caa0; */
-	   background: #ce0000;
-	   cursor: pointer;
-	   border: none;
-	   color: #fff;
-	   top:51.5%;
-	   left: 42%;
-	   z-index: 9999;
-   }
-}
-
-@media only screen and (min-width: 3150px) 
-{
-	.offer-value-btn{
-		position: absolute;
-	   display: inline-block;
-	   padding: 15px 70px;
-	   font-size: 16px;
-	   font-weight: 600;
-	   line-height: 16px;
-	   letter-spacing: 2px;
-	   border-radius: 5px;
-	   min-width: 170px;
-	   text-align: center;
-	   /*background: #30caa0; */
-	   background: #ce0000;
-	   cursor: pointer;
-	   border: none;
-	   color: #fff;
-	   top:52.5%;
-	   left: 42%;
+	   left: 45%;
 	   z-index: 9999;
    }
 }
@@ -2931,7 +2932,7 @@ nav > .nav.nav-tabs{
 	.offer-value-btn{
 		position: absolute;
 	   display: inline-block;
-	   padding: 15px 70px;
+	   padding: 10px 16px;
 	   font-size: 16px;
 	   font-weight: 600;
 	   line-height: 16px;
@@ -2944,11 +2945,13 @@ nav > .nav.nav-tabs{
 	   cursor: pointer;
 	   border: none;
 	   color: #fff;
-	   top:53%;
-	   left: 42%;
+	   top:50%;
+	   left: 45%;
 	   z-index: 9999;
    }
 }
+
+
 
 
 .center{
@@ -2962,6 +2965,7 @@ nav > .nav.nav-tabs{
 	/* margin-left: auto; 
 	margin-right: auto; */
 	box-shadow: 1px 3px 0px hsla(213, 62%, 48%, 0.16);
+	border-radius: 7px;
   }
 
   
