@@ -72,7 +72,7 @@
                             <li><a href="foreclosures">Foreclosures</a></li>
                             <li><a href="about">ABOUT</a></li>
                             <li><a href="blog">Social Media</a></li>
-                            <li><a href="contact">Contact Us</a></li>
+                            <li><a href="contact" data-toggle="modal" data-target="#myModal">Contact</a></li>
                             <!-- <li><a class="login-link" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">
 								 Login </a></li> -->
 								 
@@ -269,7 +269,95 @@
 			</div>
 		</div>
 	</footer>
+
+	<!--Contact us -Modal----------------------------->
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!--Modal-content-->
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h3 class="modal-title">Contact Us</h3>
+
+
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> </div>
+                <div class="modal-body " style="overflow-y: scroll; ">
+                    <div class="row">
+                        <div class="col">
+                            <p style="display: inline-block;">We look forward to helping you. Please add any additional comments below and we will be in touch with you shortly.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="row mb-2" style="border:0.5px solid #e9ecef;"></div>
+                    <form>
+
+                        <div class="row ">
+                            <div class="col ">
+                                <label for="contact-fname ">First Name</label>
+                                <input id="contact-fname" type="text " class="form-control " placeholder="First Name" />
+                                <div id="fname-error"></div>
+                            </div>
+
+                            <div class="col ">
+                                <label for="contact-lname ">Last Name</label>
+                                <input id="contact-lname" type="text " class="form-control " placeholder="Last Name" />
+                                <div id="lname-error"></div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col mt-3">
+                                <label for="conact-email ">Your Email</label>
+                                <input id="contact-email" type="text " class="form-control " placeholder="Your Email" />
+                                <div id="email-error"></div>
+                            </div>
+
+                            <div class="col mt-3">
+                                <label for="contact-phone ">Your Phone</label>
+                                <input id="contact-phone" type="text " class="form-control " placeholder="Your Phone" />
+                                <div id="phone-error"></div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col mt-4">
+                                <label>How soon are you looking to buy or sell?</label>
+
+
+                            </div>
+
+                            <div class="col mt-4">
+                                <input id="how-soon " type="text " class="form-control " list="time " />
+                                <datalist id="time ">
+                                 <option >Now</option>
+                         <option >Within the 3 months</option>
+                     <option >Within the 6 months</option>
+                    </datalist>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col mt-4 ">
+                                <label>Comments, Questions, Special Requests?</label>
+                                <textarea name=" " rows="5 " style="width: 100%; " id="contact-comment " placeholder="Comments, Questions, Special Requests?"></textarea>
+                            </div>
+                        </div>
+
+
+                        <div class="row ">
+                            <div class="col-6 mt-4 ">
+                                <a href=" " class="btn btn-primary btn-block contact-btn ">Send</a>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!-----end contactus model        ------------------->
 	
+
+
 	
     {% endblock %}
 	<!-- Footer section end -->

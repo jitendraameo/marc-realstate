@@ -3067,3 +3067,33 @@ display: none;
 	color: #ffff;
 	font-weight: 600;	
 }
+
+/*     -------  Contact us model css            ----------- */
+
+
+
+#contact-fname:hover,
+#contact-lname:hover,
+#contact-email:hover,
+#contact-phone:hover,
+#contact-comment:hover {
+    border-color: #1571c4;
+}
+
+#contact-fname,
+#contact-lname,
+#contact-email,
+#contact-phone {
+    border: 2px solid#dadada;
+    border-radius: 10px;
+}
+
+#contact-comment {
+    border: 2px solid#dadada;
+}
+
+.modal-header {
+	border-bottom: none;
+}
+
+
