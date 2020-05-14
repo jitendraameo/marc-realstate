@@ -3103,4 +3103,24 @@ display: none;
 	border-bottom: none;
 }
 
+/* ------------ type of property css -------- */
+
+.btn-type-property {
+    position: relative;
+    display: inline-block;
+    padding: 12px 7px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    min-width: 170px;
+    text-align: center;
+    /* background: #30caa0; */
+    background: #ce0000;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+}
+
 
