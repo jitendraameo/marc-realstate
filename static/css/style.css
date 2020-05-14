@@ -2861,25 +2861,6 @@ display: none;
 
 /* -------------------   css for social media page- -----------  */
 
-.video-container {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
-	height: 0;
-	overflow: hidden;
-	margin-bottom: 80px;
-}
-
-.video-container iframe,
-.video-container object,
-.video-container embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
 .social-btn {
 	display: inline-block;
 	padding: 1rem;
@@ -2888,6 +2869,9 @@ display: none;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
 	transition: all 250ms;
+	margin-left: 7px;
+	
+	
 }
 
 
@@ -2909,6 +2893,10 @@ display: none;
 
 .linkedin {
 	background-color: #07d;
+}
+
+.instagram {
+	background-color: #c22;
 }
 
 #wrap {
