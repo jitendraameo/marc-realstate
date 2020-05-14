@@ -29,7 +29,7 @@ def contact_view(request):
 
 
 def market_view(request):
-    return render(request, 'buyer/advance-search.html')
+    return render(request, 'buyer/market_report.html')
 
 def property_search_view(request):
     # try:

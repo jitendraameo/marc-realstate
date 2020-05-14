@@ -7,7 +7,7 @@ urlpatterns = [
     path('', home),
     path('advance-search', advance_search),
     path('foreclosures', foreclosure_search),
-    path('blog', blog_search),
+    path('social-media', blog_search),
     path('about', about_view),
     path('contact', contact_view),
     path('market_report', market_view),

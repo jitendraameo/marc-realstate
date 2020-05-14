@@ -2,6 +2,54 @@
 {% load static %}
 
 
+{% block extracss %}
+
+<style>
+.instant-img{
+		width: 100%;
+		height: 700px;
+		background-image: url( "{% static 'img/instant_offer.jpg' %}");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+
+.homevalue-img{
+    width: 100%;
+    height: 720px;
+    background-image: url( "{% static 'img/home_valuation.jpg' %}");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+		
+	}
+@media only screen and (min-width: 1900px)
+{
+	.homevalue-img
+	{
+	   height: 1122px;
+	}
+
+}
+
+@media only screen and (min-width: 1900px)
+{
+	.instant-img
+	{
+	   height: 1122px;
+	}
+
+}
+	
+
+
+
+	</style>
+
+
+
+{% endblock %} 
+
 {% block pagecontent %}
 
 <!-- banner section -->
@@ -117,38 +165,38 @@
 </section>
 <!-- buy home, sell home rent home  section end -->
 
-<section class="offer-value-section">
-<!--  instant offer --------------------->
-	<div class="container instant-offer">
-		
-		<div class="image">
-			<img class="img-reponsive" src="{% static 'img/re_instant.jpg' %} " alt="">
-		</div>
-
-		<div>
-			
-			<!-- <a href="#" class="instant-offer-value-btn" style="position: absolute; left: 50%; top:40%; transform: translate3d(-50%, -50%,0);">Get an Instant Offer</a> -->
-			<a href="#" class="instant-offer-value-btn">Get an Instant Offer</a>
-		</div>
-		
-	</div>
-	<!---       instant offer end  -->
-
-	<!--  property evaluation  --------------------->
-	<div class="container home-value">
-		
-		<div class="image">
-			<img class="img-responsive" src="{% static 'img/re_home_value.jpg' %} " alt="">
-		</div>
-					
-			<div>
-				<a class="home-value-btn" href="#">See your Home Value</a>
-				
+<!-- ---------instant offer section------------- -->
+ 
+<section class="instant-offer-section">
+	<div class="container">
+		<div class="instant-img">
+			<div class="instant-text text-white">
+				<h2>Instant Offers</h2>
+				<p>We will pay for your home and close</p>
+				<p>on your timeline. We buy as is, as seen,</p>
+				<p>and charges no fees.</p>
+				<a href="#" class="instant-offer-value-btn">Get an Instant Offer</a>
 			</div>
-		
+		</div>	
 	</div>
-<!---       property valueation end  -->
 </section>
+<!-- ---------instant offer section end------------- -->
+
+<!-- -------------home value section-------------- -->
+ 
+<section class="home-value-section">
+	<div class="container">
+		<div class="homevalue-img">
+			<div class="instant-text text-white">
+				<h2>What is your home worth ?</h2>
+				<p>Get your FREE property evaluation</p>
+				<p>in seconds</p>
+				<a href="#" class="instant-offer-value-btn">See your Home Value</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- -------------home value section end-------------- -->
 
 
 <!-- feature section -->
@@ -408,8 +456,8 @@ Contact us today to find out how we can be of assistance to you!
 <section class="feature-category-section spad">
 	<div class="container">
 		<div class="section-title text-center">
-			<h3>LOOKING PROPERTY</h3>
-			<p>What kind of property are you looking for? We will help you</p>
+			<h3>Looking for a specific property? We can help!</h3>
+			<!-- <p>Looking for a specific property? We can help!</p> -->
 		</div>
 		<div class="row">
 			<div class="col-lg-3 col-md-6 f-cata">
