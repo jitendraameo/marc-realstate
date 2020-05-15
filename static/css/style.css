@@ -2785,10 +2785,10 @@ color:#2d127c;
   
   /*---------- css for login icon --------------- */
 
-  #login-icon{
+  /* #login-icon{
 	right: 0px;
 	position: absolute;
-}
+} */
 
 @media screen and (min-width: 1000px)
 {
@@ -2917,16 +2917,21 @@ display: none;
 
 /* -------------  ---------- new login icon css ---------- */
 
-@media screen and (max-width: 992px) {
-	#login-icon {
-		right: 0px;
-		position: absolute;
-		margin-left: -14px;
-	}
-}
+
 
 #login-icon {
 	top: 30px;
-	right: 0px;
+	right: 25px;
 	position: absolute;
+
+}
+
+@media screen and (max-width: 992px) 
+{
+	#login-icon {
+		right: 125px;
+		position: absolute;
+	
+		
+	}
 }
