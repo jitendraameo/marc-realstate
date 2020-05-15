@@ -2914,3 +2914,19 @@ display: none;
 
 
 /*--------  ------------ end social media css page ---------- */
+
+/* -------------  ---------- new login icon css ---------- */
+
+@media screen and (max-width: 992px) {
+	#login-icon {
+		right: 0px;
+		position: absolute;
+		margin-left: -14px;
+	}
+}
+
+#login-icon {
+	top: 30px;
+	right: 0px;
+	position: absolute;
+}
