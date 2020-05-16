@@ -12,4 +12,6 @@ urlpatterns = [
     path('contact', contact_view),
     path('market_report', market_view),
     path('property_result', property_search_view),
+    path('advanced-search-reault', advanced_prop_search_view),
+   
 ]

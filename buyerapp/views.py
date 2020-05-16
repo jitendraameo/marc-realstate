@@ -1,7 +1,8 @@
 from django.shortcuts import render
-from django.http import request
+from django.http import request,HttpResponse
 from .models import *
 from django.db.models import Q
+import re
 
 def home(request):
   
@@ -71,6 +72,80 @@ def property_search_view(request):
 		else:
 			return render(request, 'buyer/property2.html', {'properties': Property.objects.all()})
 
+
+def advanced_prop_search_view(request):
+	property_query_set = Property.objects.all()
+	city = request.GET.getlist("cityChoice")
+	if("all" not in city):
+		cities_list = City.objects.filter(name__in=city)
+		property_query_set = property_query_set.filter(city__in= cities_list)
+
+	arealist = request.GET.getlist("areaChoice")
+	if("all" not in arealist):
+		property_query_set = property_query_set.filter(area__in=arealist)
+	
+	property_type_list = request.GET.getlist("ptypeCheckbox")
+	if(len(property_type_list)>0):
+		print("property type:", property_type_list)
+		property_query_set = property_query_set.filter(property_type__type__in=property_type_list)
+	
+	min_price=request.GET["minPricetxt"]
+	if(min_price != "No Limit"):
+		property_query_set = property_query_set.filter(price__gte=min_price)
+	max_price=request.GET["maxPricetxt"]
+	if(max_price != "No Limit"):
+		property_query_set = property_query_set.filter(price__lte=max_price)
+
+	size_in_sqfeet = request.GET["minSqfeettext"] 
+	print(size_in_sqfeet)
+	if(size_in_sqfeet !="" and size_in_sqfeet != "No Preference"):
+		size_in_sqfeet = size_in_sqfeet.replace("+","")
+		property_query_set = property_query_set.filter(property_size_in_sqrfeet__gte=size_in_sqfeet)
+
+	min_beds = request.GET["minBedtxt"] 
+	if(min_beds !="" and min_beds != "Any"):
+		min_beds = min_beds.replace("+","")
+		property_query_set = property_query_set.filter(rooms__gte=min_beds)
+
+	min_bath = request.GET["minBathtxt"] 
+	if(min_bath !="" and min_bath != "Any"):
+		min_bath = min_bath.replace("+","")
+		property_query_set = property_query_set.filter(bathrooms__gte=min_bath)
+
+	year_built = request.GET["builtYeartxt"] 
+	if(year_built !="" and year_built != "No Preference"):
+		year_built = year_built.replace("+","")
+		property_query_set = property_query_set.filter(built_year__gte=year_built)		
+
+	style = request.GET["styleTxt"] 
+	if(style !="" and style != "All"):
+		property_query_set = property_query_set.filter(style__option=style)
+
+	foreclosure = request.GET["foreclosureTxt"] 
+	if(foreclosure !="" and foreclosure != "No Preference"):
+		if(foreclosure=='Yes'):
+			foreclosure=True
+		else:
+			foreclosure=False	
+		property_query_set = property_query_set.filter(Foreclosure=foreclosure)
+
+	size_in_acre = request.GET["minAcrestxt"] 
+	print(size_in_acre)
+	if(size_in_acre !="" and size_in_acre != "No Preference"):
+		size_in_acre = size_in_acre.replace("+","")
+		property_query_set = property_query_set.filter(property_size_in_acres__gte=size_in_acre)
+
+	short_sale = request.GET["shortSaletxt"] 
+	if(short_sale !="" and short_sale != "No Preference"):
+		if(short_sale=='Yes'):
+			short_sale=True
+		else:
+			short_sale=False	
+		property_query_set = property_query_set.filter(short_sale=short_sale)
+
+	print("-------city-----:",property_query_set)
+	
+	return render(request, 'buyer/property2.html', {'properties': property_query_set})
     
 
 

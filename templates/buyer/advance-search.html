@@ -30,7 +30,9 @@
        <!--- advance search  tab-->   
         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
            
-            <!---    advance search section -->
+           <!-- -------advance search section    ----------   -->   
+          <form action="advanced-search-reault">
+          
             <div class="row">
                 <div class="col">
                     <h3 id="location">Location</h3>
@@ -44,11 +46,11 @@
                       </div>
                       </div>
                         <div class="panel-body">
-                            <form>
+                            
                              <div class="row"> 
                              <div class="col-md-6">   
                       
-                      <select multiple class="form-control" id="sel1">
+                      <select name="cityChoice" multiple class="form-control" id="sel1">
                             <option value="all" selected="selected">All</option>
                             <option value="Abington">Abington</option>
                             <option value="Acton">Acton</option>
@@ -509,10 +511,10 @@
                          </div>
                     <div class="col-md-6">   
         
-                      <select multiple class="form-control" id="sel1">
+                      <select name="areaChoice" multiple class="form-control" id="sel1">
                         <option value="all" selected="selected">Any</option>
-                        <option value="Acapesket ">Acapesket </option>
-                        <option value="Acoaxet ">Acoaxet </option>
+                        <option value="Acapesket">Acapesket </option>
+                        <option value="Acoaxet">Acoaxet </option>
                         <option value="Adams Shore">Adams Shore</option>
                         <option value="Agassiz">Agassiz</option>
                         <option value="Airport Hill">Airport Hill</option>
@@ -1186,7 +1188,7 @@
                       </select>
                     </div>
                                 </div>
-                            </form>
+                            
                         </div>
                     </div>
                 </div>
@@ -1195,108 +1197,108 @@
                     <h3 id="property">Property</h3>
                     <div class="panel panel-default property">
                         <div class="panel-body">
-                            <form>
+                            
                                 <h6>Property Type</h6>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                                    <input class="form-check-input" name="ptypeCheckbox" type="checkbox" id="inlineCheckbox1" value="House" />
                                     <label class="form-check-label" for="inlineCheckbox1">Home</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+                                    <input class="form-check-input" type="checkbox" name="ptypeCheckbox" id="inlineCheckbox2" value="Condo" />
                                     <label class="form-check-label" for="inlineCheckbox2">Condo</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+                                    <input class="form-check-input" type="checkbox" name="ptypeCheckbox" id="inlineCheckbox2" value="Land" />
                                     <label class="form-check-label" for="inlineCheckbox2">Land</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+                                    <input class="form-check-input" type="checkbox" name="ptypeCheckbox" id="inlineCheckbox2" value="Multi-Res" />
                                     <label class="form-check-label" for="inlineCheckbox2">Multi-Res</label>
                                 </div>
                                 <div class="row">
                                     <div class="col">
                                         <label for="p-id">Price</label>
-                                        <input id="p-id" type="text" class="form-control" list="price_start" />
-                                        <datalist id="price_start">
-                            <option>No Limit</option>
-                            <option selected="selected">$50,000</option>
-                            <option>$100,000</option>
-                            <option>$150,000</option>
-                            <option>$200,000</option>
-                            <option>$250,000</option>
-                            <option>$300,000</option>
-                            <option>$350,000</option>
-                            <option>$400,000</option>
-                            <option>$450,000</option>
-                            <option>$500,000</option>
-                            <option>$550,000</option>
-                            <option>$600,000</option>
-                            <option>$650,000</option>
-                            <option>$700,000</option>
-                            <option>$750,000</option>
-                            <option>$800,000</option>
-                            <option>$850,000</option>
-                            <option>$900,000</option>
-                            <option>$950,000</option>
-                            <option>$1 Million</option>
-                            <option>$1.5 Million</option>
-                            <option>$2 Million</option>
-                            <option>$2.5 Million</option>
-                            <option>$3 Million</option>
-                            <option>$3.5 Million</option>
-                            <option>$4 Million</option>
-                            <option>$4.5 Million</option>
-                            <option>$5 Million</option>
-                            <option>$6 Million</option>
-                            <option>$7 Million</option>
-                        </datalist>
+                            <select id="p-id" name="minPricetxt" class="form-control">              
+                            <option selected="selected" value="No Limit">No Limit</option>
+                            <option value="50000">$50,000</option>
+                            <option value="100000">$100,000</option>
+                            <option value="150000">$150,000</option>
+                            <option value="200000">$200,000</option>
+                            <option value="250000">$250,000</option>
+                            <option value="300000">$300,000</option>
+                            <option value="350000">$350,000</option>
+                            <option value="400000">$400,000</option>
+                            <option value="450000">$450,000</option>
+                            <option value="500000">$500,000</option>
+                            <option value="550000">$550,000</option>
+                            <option value="600000">$600,000</option>
+                            <option value="650000">$650,000</option>
+                            <option value="700000">$700,000</option>
+                            <option value="750000">$750,000</option>
+                            <option value="800000">$800,000</option>
+                            <option value="850000">$850,000</option>
+                            <option value="900000">$900,000</option>
+                            <option> value="950000"$950,000</option>
+                            <option value="1000000">$1 Million</option>
+                            <option value="1500000">$1.5 Million</option>
+                            <option value="2000000">$2 Million</option>
+                            <option value="2500000">$2.5 Million</option>
+                            <option value="3000000">$3 Million</option>
+                            <option value="3500000">$3.5 Million</option>
+                            <option value="4000000">$4 Million</option>
+                            <option value="4500000">$4.5 Million</option>
+                            <option value="5000000">$5 Million</option>
+                            <option value="6000000">$6 Million</option>
+                            <option value="7000000">$7 Million</option>
+                        </select>
                                     </div>
                                     <span class="mt-4">to</span>
                                     <div class="col">
                                         <label for="p-id"></label>
-                                        <input id="p-id" type="text" class="form-control" list="price_end" />
-                                        <datalist id="price_end">
-                            <option>No Limit</option>
-                            <option selected="selected">$50,000</option>
-                            <option>$100,000</option>
-                            <option>$150,000</option>
-                            <option>$200,000</option>
-                            <option>$250,000</option>
-                            <option>$300,000</option>
-                            <option>$350,000</option>
-                            <option>$400,000</option>
-                            <option>$450,000</option>
-                            <option>$500,000</option>
-                            <option>$550,000</option>
-                            <option>$600,000</option>
-                            <option>$650,000</option>
-                            <option>$700,000</option>
-                            <option>$750,000</option>
-                            <option>$800,000</option>
-                            <option>$850,000</option>
-                            <option>$900,000</option>
-                            <option>$950,000</option>
-                            <option>$1 Million</option>
-                            <option>$1.5 Million</option>
-                            <option>$2 Million</option>
-                            <option>$2.5 Million</option>
-                            <option>$3 Million</option>
-                            <option>$3.5 Million</option>
-                            <option>$4 Million</option>
-                            <option>$4.5 Million</option>
-                            <option>$5 Million</option>
-                            <option>$6 Million</option>
-                            <option>$7 Million</option>
-                        </datalist>
+                                        <!-- <input id="p-id" type="text" name="maxPricetxt" class="form-control" list="price_end" />
+                                        <datalist id="price_end"> -->
+                                          <select id="p-id" name="maxPricetxt" class="form-control">              
+                                            <option value="No Limit" selected="selected">No Limit</option>
+                                            <option value="50000" >$50,000</option>
+                                            <option value="100000">$100,000</option>
+                                            <option value="150000">$150,000</option>
+                                            <option value="200000">$200,000</option>
+                                            <option value="250000">$250,000</option>
+                                            <option value="300000">$300,000</option>
+                                            <option value="350000">$350,000</option>
+                                            <option value="400000">$400,000</option>
+                                            <option value="450000">$450,000</option>
+                                            <option value="500000">$500,000</option>
+                                            <option value="550000">$550,000</option>
+                                            <option value="600000">$600,000</option>
+                                            <option value="650000">$650,000</option>
+                                            <option value="700000">$700,000</option>
+                                            <option value="750000">$750,000</option>
+                                            <option value="800000">$800,000</option>
+                                            <option value="850000">$850,000</option>
+                                            <option value="900000">$900,000</option>
+                                            <option> value="950000"$950,000</option>
+                                            <option value="1000000">$1 Million</option>
+                                            <option value="1500000">$1.5 Million</option>
+                                            <option value="2000000">$2 Million</option>
+                                            <option value="2500000">$2.5 Million</option>
+                                            <option value="3000000">$3 Million</option>
+                                            <option value="3500000">$3.5 Million</option>
+                                            <option value="4000000">$4 Million</option>
+                                            <option value="4500000">$4.5 Million</option>
+                                            <option value="5000000">$5 Million</option>
+                                            <option value="6000000">$6 Million</option>
+                                            <option value="7000000">$7 Million</option>
+                                        </select>
                                     </div>
                                 </div>
         
                                 <div class="row">
                                     <div class="col">
                                         <label for="p-id">Min Sq. Feet</label>
-                                        <input id="p-id" type="text" class="form-control" list="area_min" />
+                                        <input id="p-id" name="minSqfeettext" type="text" class="form-control" list="area_min" />
                                         <datalist id="area_min">
-                            <option>No Preference</option>
+                            <option selected="selected">No Preference</option>
                             <option>1000+</option>
                             <option>1250+</option>
                             <option>1500+</option>
@@ -1313,7 +1315,7 @@
                                     </div>
                                     <div class="col">
                                         <label for="p-id">Min Beds</label>
-                                        <input id="p-id" type="text" class="form-control" list="min_bed" />
+                                        <input id="p-id" name="minBedtxt" type="text" class="form-control" list="min_bed" />
                                         <datalist id="min_bed">
                             <option>Any</option>
                             <option>1+</option>
@@ -1328,7 +1330,7 @@
                                 <div class="row">
                                     <div class="col">
                                         <label for="p-id">Min Baths</label>
-                                        <input id="p-id" type="text" class="form-control" list="min_bath" />
+                                        <input id="p-id" name="minBathtxt" type="text" class="form-control" list="min_bath" />
                                         <datalist id="min_bath">
                                             <option>Any</option>
                                             <option>1+</option>
@@ -1341,7 +1343,7 @@
                                     </div>
                                     <div class="col">
                                         <label for="p-id">Year Built</label>
-                                        <input id="p-id" type="text" class="form-control" list="year_built" />
+                                        <input id="p-id" type="text" name="builtYeartxt" class="form-control" list="year_built" />
                                         <datalist id="year_built">
                                             <option>No Preference</option>
                                             <option>2020+</option>
@@ -1390,7 +1392,7 @@
                                 <div class="row">
                                     <div class="col">
                                         <label for="p-id">Style</label>
-                                        <input id="p-id" type="text" class="form-control" list="style" />
+                                        <input id="p-id" name="styleTxt" type="text" class="form-control" list="style" />
                                         <datalist id="style">
                                             <option selected="selected">All</option>
                                             <option>2/3 Family</option>
@@ -1455,7 +1457,7 @@
                                     </div>
                                     <div class="col">
                                         <label for="p-id">Foreclosure</label>
-                                        <input id="p-id" type="text" class="form-control" list="foreclosure" />
+                                        <input id="p-id" name="foreclosureTxt" type="text" class="form-control" list="foreclosure" />
                                         <datalist id="foreclosure">
                                             <option>No Preference</option>
                                             <option>Yes</option>
@@ -1466,7 +1468,7 @@
                                 <div class="row">
                                     <div class="col">
                                         <label for="p-id">Min. Acres</label>
-                                        <input id="p-id" type="text" class="form-control" list="min_acres" />
+                                        <input id="p-id" name="minAcrestxt" type="text" class="form-control" list="min_acres" />
                                         <datalist id="min_acres">
                                             <option>No Preference</option>
                                             <option>1+</option>
@@ -1487,7 +1489,7 @@
                                     </div>
                                     <div class="col">
                                         <label for="p-id">Short Sale</label>
-                                        <input id="p-id" type="text" class="form-control" list="short_sale" />
+                                        <input id="p-id" name="shortSaletxt" type="text" class="form-control" list="short_sale" />
                                         <datalist id="short_sale">
                                             <option>No Preference</option>
                                             <option>Yes</option>
@@ -1498,13 +1500,15 @@
         
         
         
-                                <button class="btn btn-danger" id="p-submit">Search</button>
-                                <button class="btn btn-danger" id="p-submit">Map Search</button>
-                            </form>
+                                <button name="advancedSearchbtn" class="btn btn-danger" id="p-submit">Search</button>
+                                <button name="advancedMapsearchbtn" class="btn btn-danger" id="p-submit">Map Search</button>
+                            
                         </div>
                     </div>
                 </div>
             </div>
+
+            </form>
            <!-- -------advance search section end     ----------   -->   
           
         </div>

@@ -2470,10 +2470,11 @@ padding-bottom: 0px;
 
 #p-id {
     margin-bottom: 15px;
-    padding: 10px;
+    padding: 8px;
     border-radius: 10px;
     cursor: pointer;
-    border: 1.5px solid gainsboro;
+	border: 1.5px solid gainsboro;
+	height: 45px;
 }
 
 #p-id:hover {
