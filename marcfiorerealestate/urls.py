@@ -24,6 +24,7 @@ from . import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('buyerapp.urls')),
+    
 ]
 
 urlpatterns += staticfiles_urlpatterns()
