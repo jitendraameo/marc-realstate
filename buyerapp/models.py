@@ -1,9 +1,12 @@
 from django.db import models
+from datetime import date
 
 
 class Property(models.Model):
     name = models.CharField(max_length=400)
     house = models.CharField(max_length=200)
+    user = models.CharField(max_length=100, null=True)
+    upload_date = models.DateField(default=date.today)
     city = models.ForeignKey('City', on_delete=models.CASCADE)
     property_address = models.CharField(max_length=300)
     zipcode = models.CharField(max_length=15)
@@ -26,6 +29,7 @@ class Property(models.Model):
     Foreclosure= models.BooleanField()
     property_size_in_sqrfeet = models.FloatField()
     property_size_in_acres= models.FloatField()
+    mls_no = models.CharField(max_length=30, null=True)
     # floorplan = models.ForeignKey('FloorPlan', default='None',on_delete=models.CASCADE)
     featured = models.BooleanField()
     # image_gallery = models.ForeignKey(Gallery, default='None', on_delete=models.CASCADE)
